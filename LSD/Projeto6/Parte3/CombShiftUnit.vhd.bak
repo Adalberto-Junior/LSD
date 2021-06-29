@@ -1,0 +1,45 @@
+------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+-----------
+
+entity CombShiftUnit is
+						port(dataIn    : in std_logic_vector(7 downto 0);
+							  dirLeft   : in std_logic;
+							  shAmount  : in std_logic_vector(2 downto 0);
+							  shArith	: in std_logic;
+							  rotate		: in std_logic;
+							  dataOut   : out std_logic_vector(7 downto 0));
+						
+
+end CombShiftUnit;
+-----------------
+
+architecture Combinatorio of CombShiftUnit is
+
+			Signal s_Shamout  : Natural;
+			Signal s_shiftReg : unsigned(7 downto 0);
+				
+begin
+
+		s_Shamout <= Natural(unsigned(Shamount));
+		
+		process(dataIn, dirLeft, rotate, s_Shamout)
+			begin
+				if(rotate = '1') or (shArith = '0') then
+					if(dirLeft = '1') then
+						dataOut <= std_logic_vector(s_shiftReg(unsigned(dataIn), s_Shamout));
+					else
+					
+				
+
+
+
+
+
+
+
+
+end combinatorio;
+----------------

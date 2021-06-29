@@ -1,0 +1,63 @@
+# do ALUN_Demo.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:21 on Apr 18,2021
+# vcom -work work ALUN_Demo.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity ALUN
+# -- Compiling architecture structure of ALUN
+# End time: 14:42:21 on Apr 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:42:21 on Apr 18,2021
+# vcom -work work ALUN.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALUN_vhd_vec_tst
+# -- Compiling architecture ALUN_arch of ALUN_vhd_vec_tst
+# End time: 14:42:21 on Apr 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ALUN_vhd_vec_tst 
+# Start time: 14:42:21 on Apr 18,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alun_vhd_vec_tst(alun_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.alun(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_unsigned(body)
+# Loading cycloneive.cycloneive_mac_mult(vital_cycloneive_mac_mult)
+# Loading cycloneive.cycloneive_mac_data_reg(vital_cycloneive_mac_data_reg)
+# Loading cycloneive.cycloneive_mac_sign_reg(cycloneive_mac_sign_reg)
+# Loading cycloneive.cycloneive_mac_mult_internal(vital_cycloneive_mac_mult_internal)
+# Loading cycloneive.cycloneive_mac_out(vital_cycloneive_mac_out)
+# ** Warning: Design size of 28041 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#29
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /alun_vhd_vec_tst/i1/\Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /alun_vhd_vec_tst/i1/\Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /alun_vhd_vec_tst/i1/\Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /alun_vhd_vec_tst/i1/\Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 8  Instance: /alun_vhd_vec_tst/i1/\Mult0|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 8  Instance: /alun_vhd_vec_tst/i1/\Mult0|auto_generated|mac_mult1\/mac_multiply
+# End time: 14:42:22 on Apr 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 7

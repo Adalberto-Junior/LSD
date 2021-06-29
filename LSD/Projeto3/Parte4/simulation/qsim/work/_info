@@ -1,0 +1,268 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/LSD/Projeto3/Parte4/simulation/qsim
+Ealudemo
+Z1 w1617107405
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8ALUDemo.vho
+Z9 FALUDemo.vho
+l0
+L34
+Vl1`jBVK3ECNWm]?Nj@H^M1
+!s100 ][TMRj2YYFh;HQ<ofC;M;2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1617107406
+!i10b 1
+Z12 !s108 1617107406.000000
+Z13 !s90 -work|work|ALUDemo.vho|
+Z14 !s107 ALUDemo.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 aludemo 0 22 l1`jBVK3ECNWm]?Nj@H^M1
+l239
+L44
+VECgGi>CNNP0>C?:2hfOS>2
+!s100 FbGOXGOAVLY:b^Xz<2HXY0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealudemo1
+Z17 w1617108002
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+V_z:zzZ7O]bF_c:3EWnLRJ3
+!s100 D@CU<gJ:CYdX0`=SMM_Vf1
+R10
+32
+Z18 !s110 1617108003
+!i10b 1
+Z19 !s108 1617108003.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 aludemo1 0 22 _z:zzZ7O]bF_c:3EWnLRJ3
+l278
+L45
+Vda2lJ1YjgIDcm:5eO<Lgb3
+!s100 e5oCS8WdkX[ZAgGH=XYV03
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Ealudemo1_vhd_vec_tst
+Z20 w1617108000
+R5
+R6
+R0
+Z21 8ALUDemo1.vwf.vht
+Z22 FALUDemo1.vwf.vht
+l0
+L31
+V`djbnFE:mm`QM8:109ShO0
+!s100 aLl6:?PB[ZO=9DJGR;@Q[0
+R10
+32
+R18
+!i10b 1
+R19
+Z23 !s90 -work|work|ALUDemo1.vwf.vht|
+Z24 !s107 ALUDemo1.vwf.vht|
+!i113 1
+R15
+R16
+Aaludemo1_arch
+R5
+R6
+DEx4 work 20 aludemo1_vhd_vec_tst 0 22 `djbnFE:mm`QM8:109ShO0
+l52
+L33
+VS7K6R@j>O@^TIhKY5IJ?22
+!s100 8LGmj^]mOhk[0c`eDl>:S2
+R10
+32
+R18
+!i10b 1
+R19
+R23
+R24
+!i113 1
+R15
+R16
+Ealudemo_vhd_vec_tst
+Z25 w1617107404
+R5
+R6
+R0
+Z26 8ALUDemo.vwf.vht
+Z27 FALUDemo.vwf.vht
+l0
+L31
+VM]=UW96o=9Rg8@:9kSSlJ3
+!s100 hGf2z3:=TBfZi;QVLd4>G2
+R10
+32
+Z28 !s110 1617107407
+!i10b 1
+R12
+Z29 !s90 -work|work|ALUDemo.vwf.vht|
+Z30 !s107 ALUDemo.vwf.vht|
+!i113 1
+R15
+R16
+Aaludemo_arch
+R5
+R6
+DEx4 work 19 aludemo_vhd_vec_tst 0 22 M]=UW96o=9Rg8@:9kSSlJ3
+l50
+L33
+VMBl:YHV8:]Zi7J35eYKkO3
+!s100 F:VTY0lOdgVlm;hJ3l9>Q3
+R10
+32
+R28
+!i10b 1
+R12
+R29
+R30
+!i113 1
+R15
+R16
+Ebin2bcd
+Z31 w1617105329
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+V6hT[JjgI89dU78oXP0`1N2
+!s100 3^GUz21H=ib5LAHaVDQF?3
+R10
+32
+Z32 !s110 1617105330
+!i10b 1
+Z33 !s108 1617105330.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 bin2bcd 0 22 6hT[JjgI89dU78oXP0`1N2
+l83
+L42
+VBP>eHIJBT3XdfRSPPY;403
+!s100 fATP05g4f[OY5^EdfXaDj3
+R10
+32
+R32
+!i10b 1
+R33
+R13
+R14
+!i113 1
+R15
+R16
+Ebin2bcd_vhd_vec_tst
+Z34 w1617105328
+R5
+R6
+R0
+Z35 8Bin2BCD.vwf.vht
+Z36 FBin2BCD.vwf.vht
+l0
+L31
+VjbLMocai[g6?aPgW:aWIk1
+!s100 TFR6X7Y^2ECfjSaX0mZ^[3
+R10
+32
+R32
+!i10b 1
+R33
+Z37 !s90 -work|work|Bin2BCD.vwf.vht|
+Z38 !s107 Bin2BCD.vwf.vht|
+!i113 1
+R15
+R16
+Abin2bcd_arch
+R5
+R6
+DEx4 work 19 bin2bcd_vhd_vec_tst 0 22 jbLMocai[g6?aPgW:aWIk1
+l46
+L33
+VaLd6gnWJJE95UckRh?Tj^0
+!s100 Fi6]eGOJ32HE@1TInZ7zT0
+R10
+32
+R32
+!i10b 1
+R33
+R37
+R38
+!i113 1
+R15
+R16

@@ -1,0 +1,344 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- VENDOR "Altera"
+-- PROGRAM "Quartus Prime"
+-- VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
+
+-- DATE "04/29/2021 16:50:34"
+
+-- 
+-- Device: Altera EP4CE115F29C7 Package FBGA780
+-- 
+
+-- 
+-- This VHDL file should be used for ModelSim (VHDL) only
+-- 
+
+LIBRARY CYCLONEIVE;
+LIBRARY IEEE;
+USE CYCLONEIVE.CYCLONEIVE_COMPONENTS.ALL;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY 	hard_block IS
+    PORT (
+	devoe : IN std_logic;
+	devclrn : IN std_logic;
+	devpor : IN std_logic
+	);
+END hard_block;
+
+-- Design Ports Information
+-- ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+
+ARCHITECTURE structure OF hard_block IS
+SIGNAL gnd : std_logic := '0';
+SIGNAL vcc : std_logic := '1';
+SIGNAL unknown : std_logic := 'X';
+SIGNAL ww_devoe : std_logic;
+SIGNAL ww_devclrn : std_logic;
+SIGNAL ww_devpor : std_logic;
+SIGNAL \~ALTERA_ASDO_DATA1~~padout\ : std_logic;
+SIGNAL \~ALTERA_FLASH_nCE_nCSO~~padout\ : std_logic;
+SIGNAL \~ALTERA_DATA0~~padout\ : std_logic;
+SIGNAL \~ALTERA_ASDO_DATA1~~ibuf_o\ : std_logic;
+SIGNAL \~ALTERA_FLASH_nCE_nCSO~~ibuf_o\ : std_logic;
+SIGNAL \~ALTERA_DATA0~~ibuf_o\ : std_logic;
+
+BEGIN
+
+ww_devoe <= devoe;
+ww_devclrn <= devclrn;
+ww_devpor <= devpor;
+END structure;
+
+
+LIBRARY CYCLONEIVE;
+LIBRARY IEEE;
+USE CYCLONEIVE.CYCLONEIVE_COMPONENTS.ALL;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY 	PEnc4_2Demo IS
+    PORT (
+	LEDR : OUT std_logic_vector(2 DOWNTO 0);
+	SW : IN std_logic_vector(3 DOWNTO 0)
+	);
+END PEnc4_2Demo;
+
+-- Design Ports Information
+-- LEDR[2]	=>  Location: PIN_E19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- LEDR[1]	=>  Location: PIN_F19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- LEDR[0]	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- SW[2]	=>  Location: PIN_AC27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- SW[1]	=>  Location: PIN_AC28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- SW[3]	=>  Location: PIN_AD27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- SW[0]	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+ARCHITECTURE structure OF PEnc4_2Demo IS
+SIGNAL gnd : std_logic := '0';
+SIGNAL vcc : std_logic := '1';
+SIGNAL unknown : std_logic := 'X';
+SIGNAL devoe : std_logic := '1';
+SIGNAL devclrn : std_logic := '1';
+SIGNAL devpor : std_logic := '1';
+SIGNAL ww_devoe : std_logic;
+SIGNAL ww_devclrn : std_logic;
+SIGNAL ww_devpor : std_logic;
+SIGNAL ww_LEDR : std_logic_vector(2 DOWNTO 0);
+SIGNAL ww_SW : std_logic_vector(3 DOWNTO 0);
+SIGNAL \LEDR[2]~output_o\ : std_logic;
+SIGNAL \LEDR[1]~output_o\ : std_logic;
+SIGNAL \LEDR[0]~output_o\ : std_logic;
+SIGNAL \SW[3]~input_o\ : std_logic;
+SIGNAL \SW[2]~input_o\ : std_logic;
+SIGNAL \SW[1]~input_o\ : std_logic;
+SIGNAL \SW[0]~input_o\ : std_logic;
+SIGNAL \inst|validOut~0_combout\ : std_logic;
+SIGNAL \inst|comb~1_combout\ : std_logic;
+SIGNAL \inst|comb~0_combout\ : std_logic;
+SIGNAL \inst|comb~2_combout\ : std_logic;
+SIGNAL \inst|comb~3_combout\ : std_logic;
+SIGNAL \inst|encodedOut\ : std_logic_vector(1 DOWNTO 0);
+
+COMPONENT hard_block
+    PORT (
+	devoe : IN std_logic;
+	devclrn : IN std_logic;
+	devpor : IN std_logic);
+END COMPONENT;
+
+BEGIN
+
+LEDR <= ww_LEDR;
+ww_SW <= SW;
+ww_devoe <= devoe;
+ww_devclrn <= devclrn;
+ww_devpor <= devpor;
+auto_generated_inst : hard_block
+PORT MAP (
+	devoe => ww_devoe,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor);
+
+-- Location: IOOBUF_X94_Y73_N9
+\LEDR[2]~output\ : cycloneive_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|validOut~0_combout\,
+	devoe => ww_devoe,
+	o => \LEDR[2]~output_o\);
+
+-- Location: IOOBUF_X94_Y73_N2
+\LEDR[1]~output\ : cycloneive_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|encodedOut\(1),
+	devoe => ww_devoe,
+	o => \LEDR[1]~output_o\);
+
+-- Location: IOOBUF_X69_Y73_N16
+\LEDR[0]~output\ : cycloneive_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \inst|encodedOut\(0),
+	devoe => ww_devoe,
+	o => \LEDR[0]~output_o\);
+
+-- Location: IOIBUF_X115_Y13_N8
+\SW[3]~input\ : cycloneive_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(3),
+	o => \SW[3]~input_o\);
+
+-- Location: IOIBUF_X115_Y15_N8
+\SW[2]~input\ : cycloneive_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(2),
+	o => \SW[2]~input_o\);
+
+-- Location: IOIBUF_X115_Y14_N1
+\SW[1]~input\ : cycloneive_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(1),
+	o => \SW[1]~input_o\);
+
+-- Location: IOIBUF_X115_Y17_N1
+\SW[0]~input\ : cycloneive_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_SW(0),
+	o => \SW[0]~input_o\);
+
+-- Location: LCCOMB_X114_Y17_N8
+\inst|validOut~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|validOut~0_combout\ = (\SW[3]~input_o\ & (!\SW[2]~input_o\ & (!\SW[1]~input_o\ & !\SW[0]~input_o\))) # (!\SW[3]~input_o\ & ((\SW[2]~input_o\ & (!\SW[1]~input_o\ & !\SW[0]~input_o\)) # (!\SW[2]~input_o\ & (\SW[1]~input_o\ $ (\SW[0]~input_o\)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000100010110",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \SW[3]~input_o\,
+	datab => \SW[2]~input_o\,
+	datac => \SW[1]~input_o\,
+	datad => \SW[0]~input_o\,
+	combout => \inst|validOut~0_combout\);
+
+-- Location: LCCOMB_X114_Y17_N12
+\inst|comb~1\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|comb~1_combout\ = (!\SW[1]~input_o\ & (!\SW[0]~input_o\ & (\SW[3]~input_o\ $ (\SW[2]~input_o\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000000000110",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \SW[3]~input_o\,
+	datab => \SW[2]~input_o\,
+	datac => \SW[1]~input_o\,
+	datad => \SW[0]~input_o\,
+	combout => \inst|comb~1_combout\);
+
+-- Location: LCCOMB_X114_Y17_N26
+\inst|comb~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|comb~0_combout\ = (!\SW[3]~input_o\ & (!\SW[2]~input_o\ & (\SW[1]~input_o\ $ (\SW[0]~input_o\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000100010000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \SW[3]~input_o\,
+	datab => \SW[2]~input_o\,
+	datac => \SW[1]~input_o\,
+	datad => \SW[0]~input_o\,
+	combout => \inst|comb~0_combout\);
+
+-- Location: LCCOMB_X114_Y17_N18
+\inst|encodedOut[1]\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|encodedOut\(1) = (!\inst|comb~0_combout\ & ((\inst|comb~1_combout\) # (\inst|encodedOut\(1))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000111100001010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|comb~1_combout\,
+	datac => \inst|comb~0_combout\,
+	datad => \inst|encodedOut\(1),
+	combout => \inst|encodedOut\(1));
+
+-- Location: LCCOMB_X114_Y17_N6
+\inst|comb~2\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|comb~2_combout\ = (!\SW[3]~input_o\ & (!\SW[1]~input_o\ & (\SW[2]~input_o\ $ (\SW[0]~input_o\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000100000100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \SW[3]~input_o\,
+	datab => \SW[2]~input_o\,
+	datac => \SW[1]~input_o\,
+	datad => \SW[0]~input_o\,
+	combout => \inst|comb~2_combout\);
+
+-- Location: LCCOMB_X114_Y17_N24
+\inst|comb~3\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|comb~3_combout\ = (!\SW[2]~input_o\ & (!\SW[0]~input_o\ & (\SW[3]~input_o\ $ (\SW[1]~input_o\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000000000010010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \SW[3]~input_o\,
+	datab => \SW[2]~input_o\,
+	datac => \SW[1]~input_o\,
+	datad => \SW[0]~input_o\,
+	combout => \inst|comb~3_combout\);
+
+-- Location: LCCOMB_X114_Y17_N20
+\inst|encodedOut[0]\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|encodedOut\(0) = (!\inst|comb~2_combout\ & ((\inst|comb~3_combout\) # (\inst|encodedOut\(0))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101010101000100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|comb~2_combout\,
+	datab => \inst|comb~3_combout\,
+	datad => \inst|encodedOut\(0),
+	combout => \inst|encodedOut\(0));
+
+ww_LEDR(2) <= \LEDR[2]~output_o\;
+
+ww_LEDR(1) <= \LEDR[1]~output_o\;
+
+ww_LEDR(0) <= \LEDR[0]~output_o\;
+END structure;
+
+

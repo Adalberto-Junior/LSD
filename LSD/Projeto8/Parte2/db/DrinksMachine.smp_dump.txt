@@ -1,0 +1,11 @@
+
+State Machine - |DrinksFSM|s_pstate
+Name s_pstate.S7 s_pstate.S6 s_pstate.S5 s_pstate.S4 s_pstate.S3 s_pstate.S2 s_pstate.S1 s_pstate.S0 
+s_pstate.S0 0 0 0 0 0 0 0 0 
+s_pstate.S1 0 0 0 0 0 0 1 1 
+s_pstate.S2 0 0 0 0 0 1 0 1 
+s_pstate.S3 0 0 0 0 1 0 0 1 
+s_pstate.S4 0 0 0 1 0 0 0 1 
+s_pstate.S5 0 0 1 0 0 0 0 1 
+s_pstate.S6 0 1 0 0 0 0 0 1 
+s_pstate.S7 1 0 0 0 0 0 0 1 

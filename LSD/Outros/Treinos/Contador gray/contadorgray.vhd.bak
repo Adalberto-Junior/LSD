@@ -1,0 +1,11 @@
+-----------
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+------------
+
+entity contadorgray is
+					port(clk     : in std_logic;
+						  reset   : in std_logic;
+						  dataIn  : in std_logic_vector(3 downto 0);
+						  dataOut : out std_logic_vector(3 downto 0));
+end contadorgray;

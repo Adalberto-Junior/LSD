@@ -1,0 +1,168 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\intelFPGA_lite\17.1\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Maquina_Auto_ofe_pro -c Maquina_Auto_ofe_pro --vector_source="C:/LSD/ProjetoFinal/Fase1/Maquina_Auto.vwf" --testbench_file="C:/LSD/ProjetoFinal/Fase1/simulation/qsim/Maquina_Auto.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Wed Jun 16 09:17:47 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Maquina_Auto_ofe_pro -c Maquina_Auto_ofe_pro --vector_source=C:/LSD/ProjetoFinal/Fase1/Maquina_Auto.vwf --testbench_file=C:/LSD/ProjetoFinal/Fase1/simulation/qsim/Maquina_Auto.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+ pin "HEX3" in vector source file when writing test bench files
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/LSD/ProjetoFinal/Fase1/simulation/qsim/" Maquina_Auto_ofe_pro -c Maquina_Auto_ofe_pro
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Wed Jun 16 09:17:48 2021
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/LSD/ProjetoFinal/Fase1/simulation/qsim/ Maquina_Auto_ofe_pro -c Maquina_Auto_ofe_pro
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file Maquina_Auto_ofe_pro.vho in folder "C:/LSD/ProjetoFinal/Fase1/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4638 megabytes
+    Info: Processing ended: Wed Jun 16 09:17:49 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/LSD/ProjetoFinal/Fase1/simulation/qsim/Maquina_Auto_ofe_pro.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do Maquina_Auto_ofe_pro.do
+
+Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+
+
+# 10.5b
+
+# do Maquina_Auto_ofe_pro.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:17:51 on Jun 16,2021
+# vcom -work work Maquina_Auto_ofe_pro.vho 
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity Maquina_AutoTop
+# -- Compiling architecture structure of Maquina_AutoTop
+# End time: 09:17:52 on Jun 16,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:17:52 on Jun 16,2021
+# vcom -work work Maquina_Auto.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Maquina_AutoTop_vhd_vec_tst
+# -- Compiling architecture Maquina_AutoTop_arch of Maquina_AutoTop_vhd_vec_tst
+# End time: 09:17:52 on Jun 16,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Maquina_AutoTop_vhd_vec_tst 
+# Start time: 09:17:52 on Jun 16,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.maquina_autotop_vhd_vec_tst(maquina_autotop_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.maquina_autotop(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 35158 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#35
+
+# End time: 09:17:53 on Jun 16,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/LSD/ProjetoFinal/Fase1/Maquina_Auto.vwf...
+
+Reading C:/LSD/ProjetoFinal/Fase1/simulation/qsim/Maquina_Auto_ofe_pro.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: LEDG - signal not found in VCD.
+
+Warning: LEDR - signal not found in VCD.
+
+Writing the resulting VWF to C:/LSD/ProjetoFinal/Fase1/simulation/qsim/Maquina_Auto_ofe_pro_20210616091753.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

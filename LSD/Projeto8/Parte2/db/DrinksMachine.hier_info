@@ -1,0 +1,157 @@
+|DrinksMachineDemo
+LEDR[0] <= timer:inst5.pulseOut
+CLOCK_50 => ClkDividerN:inst1.clkIn
+KEY[0] => timer:inst5.reset
+KEY[0] => DrinksFSM:inst.reset
+SW[0] => DebounceUnit:inst2.dirtyIn
+SW[1] => DebounceUnit:inst3.dirtyIn
+
+
+|DrinksMachineDemo|timer:inst5
+clk => pulseOut~reg0.CLK
+clk => s_count[0].CLK
+clk => s_count[1].CLK
+clk => s_count[2].CLK
+clk => s_count[3].CLK
+clk => s_count[4].CLK
+clk => s_count[5].CLK
+clk => s_count[6].CLK
+clk => s_count[7].CLK
+clk => s_count[8].CLK
+clk => s_count[9].CLK
+clk => s_count[10].CLK
+clk => s_count[11].CLK
+clk => s_count[12].CLK
+clk => s_count[13].CLK
+clk => s_count[14].CLK
+clk => s_count[15].CLK
+clk => s_count[16].CLK
+clk => s_count[17].CLK
+clk => s_count[18].CLK
+clk => s_count[19].CLK
+clk => s_count[20].CLK
+clk => s_count[21].CLK
+clk => s_count[22].CLK
+clk => s_count[23].CLK
+clk => s_count[24].CLK
+clk => s_count[25].CLK
+clk => s_count[26].CLK
+clk => s_count[27].CLK
+clk => s_count[28].CLK
+clk => s_count[29].CLK
+clk => s_count[30].CLK
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => s_count.OUTPUTSELECT
+reset => pulseOut.OUTPUTSELECT
+start => p1.IN1
+pulseOut <= pulseOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DrinksMachineDemo|ClkDividerN:inst1
+clkIn => clkOut~reg0.CLK
+clkIn => s_divCounter.CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DrinksMachineDemo|DrinksFSM:inst
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+V => ~NO_FANOUT~
+C => ~NO_FANOUT~
+sout[0] <= <GND>
+sout[1] <= <GND>
+sout[2] <= <GND>
+Drink <= <GND>
+
+
+|DrinksMachineDemo|DebounceUnit:inst2
+refClk => s_pulsedOut.CLK
+refClk => s_debounceCnt[0].CLK
+refClk => s_debounceCnt[1].CLK
+refClk => s_debounceCnt[2].CLK
+refClk => s_debounceCnt[3].CLK
+refClk => s_debounceCnt[4].CLK
+refClk => s_debounceCnt[5].CLK
+refClk => s_debounceCnt[6].CLK
+refClk => s_debounceCnt[7].CLK
+refClk => s_debounceCnt[8].CLK
+refClk => s_debounceCnt[9].CLK
+refClk => s_debounceCnt[10].CLK
+refClk => s_debounceCnt[11].CLK
+refClk => s_debounceCnt[12].CLK
+refClk => s_debounceCnt[13].CLK
+refClk => s_debounceCnt[14].CLK
+refClk => s_debounceCnt[15].CLK
+refClk => s_debounceCnt[16].CLK
+refClk => s_debounceCnt[17].CLK
+refClk => s_debounceCnt[18].CLK
+refClk => s_debounceCnt[19].CLK
+refClk => s_debounceCnt[20].CLK
+refClk => s_debounceCnt[21].CLK
+refClk => s_debounceCnt[22].CLK
+refClk => s_previousIn.CLK
+refClk => s_dirtyIn.CLK
+dirtyIn => s_dirtyIn.DATAIN
+pulsedOut <= s_pulsedOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DrinksMachineDemo|DebounceUnit:inst3
+refClk => s_pulsedOut.CLK
+refClk => s_debounceCnt[0].CLK
+refClk => s_debounceCnt[1].CLK
+refClk => s_debounceCnt[2].CLK
+refClk => s_debounceCnt[3].CLK
+refClk => s_debounceCnt[4].CLK
+refClk => s_debounceCnt[5].CLK
+refClk => s_debounceCnt[6].CLK
+refClk => s_debounceCnt[7].CLK
+refClk => s_debounceCnt[8].CLK
+refClk => s_debounceCnt[9].CLK
+refClk => s_debounceCnt[10].CLK
+refClk => s_debounceCnt[11].CLK
+refClk => s_debounceCnt[12].CLK
+refClk => s_debounceCnt[13].CLK
+refClk => s_debounceCnt[14].CLK
+refClk => s_debounceCnt[15].CLK
+refClk => s_debounceCnt[16].CLK
+refClk => s_debounceCnt[17].CLK
+refClk => s_debounceCnt[18].CLK
+refClk => s_debounceCnt[19].CLK
+refClk => s_debounceCnt[20].CLK
+refClk => s_debounceCnt[21].CLK
+refClk => s_debounceCnt[22].CLK
+refClk => s_previousIn.CLK
+refClk => s_dirtyIn.CLK
+dirtyIn => s_dirtyIn.DATAIN
+pulsedOut <= s_pulsedOut.DB_MAX_OUTPUT_PORT_TYPE
+
+

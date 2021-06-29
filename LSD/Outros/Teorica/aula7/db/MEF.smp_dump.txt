@@ -1,0 +1,6 @@
+
+State Machine - |MEF|amor:inst|S_y
+Name S_y.S2 S_y.S1 S_y.S0 
+S_y.S0 0 0 0 
+S_y.S1 0 1 1 
+S_y.S2 1 0 1 

@@ -1,0 +1,20 @@
+|MEF
+LEDR[0] <= amor:inst.z
+KEY[0] => amor:inst.clk
+SW[0] => amor:inst.reset
+SW[1] => amor:inst.w
+
+
+|MEF|amor:inst
+clk => S_y~1.DATAIN
+reset => S_y.OUTPUTSELECT
+reset => S_y.OUTPUTSELECT
+reset => S_y.OUTPUTSELECT
+w => S_y_next.S0.DATAA
+w => Selector0.IN2
+w => S_y_next.S0.DATAB
+w => S_y_next.S1.DATAB
+w => Selector0.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,9 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Escolha_prod_FSM is
+
+
+
+
+end Escolha_prod_FSM;

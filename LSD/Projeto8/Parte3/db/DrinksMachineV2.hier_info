@@ -1,0 +1,18 @@
+|DrinksFSM
+clk => fstate~1.DATAIN
+reset => reg_fstate.S0.OUTPUTSELECT
+reset => reg_fstate.S1.OUTPUTSELECT
+reset => reg_fstate.S2.OUTPUTSELECT
+reset => reg_fstate.S3.OUTPUTSELECT
+reset => reg_fstate.S4.OUTPUTSELECT
+reset => reg_fstate.S5.OUTPUTSELECT
+reset => Drink.OUTPUTSELECT
+M20 => process_1.IN0
+M20 => process_1.IN0
+M20 => process_1.IN0
+M50 => process_1.IN1
+M50 => process_1.IN1
+M50 => process_1.IN1
+Drink <= Drink.DB_MAX_OUTPUT_PORT_TYPE
+
+

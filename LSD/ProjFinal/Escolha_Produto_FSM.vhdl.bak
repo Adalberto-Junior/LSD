@@ -1,0 +1,130 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Escolha_Produto_FSM is
+	port(reset			: in  std_logic;
+		  clk   			: in  std_logic;
+		  
+		  coca			: in  std_logic;
+		  agua			: in  std_logic;
+		  sumoLar		: in  std_logic;
+		  sel_TamGarr  : in  std_logic;
+		  
+		  timeExp 		: in  std_logic;
+		  newTime 		: out std_logic;
+		  timeVal 		: out std_logic_vector(7 downto 0);
+		  timerEnable	: out std_logic;
+		  
+		  sel_word 		: out std_logic_vector(15 downto 0);
+		  
+		  LEDR 			: out std_logic;
+		  LEDG 			: out std_logic;
+		  
+		  sel_modo_TG 	: out std_logic
+		  );
+end Escolha_Produto_FSM;
+
+
+
+architecture Behavior of Escolha_Produto_FSM is
+
+	constant TempoInicial	: std_logic_vector(7 downto 0) := "00000100"; -- 4 s
+	constant TempoPrep		: std_logic_vector(7 downto 0) := "00000110"; -- 6 s
+	constant TempoDone		: std_logic_vector(7 downto 0) := "00000101"; -- 5 s
+	
+	constant msg_COCA			: std_logic_vector(15 downto 0) := "1100000111001010"; 
+	constant msg_AGUA			: std_logic_vector(15 downto 0) := "1010001101001010";
+	constant msg_SLAr			: std_logic_vector(15 downto 0) := "1001001010100111";
+	constant msg_OLA			: std_logic_vector(15 downto 0) := "0001001010101111";
+	constant msg_EPro			: std_logic_vector(15 downto 0) := "0101011001111000";
+	
+ 
+	type TState is (TOla, TEPro, TCoca, TAgua, TSLAr, TDone);
+	signal PS, NS	: TState := TOla;
+
+begin
+	sync_proc : process(clk)
+	begin
+		if (rising_edge(clk)) then
+			if (reset = '1') then
+				PS <= TOla;
+			else
+				PS	<= NS;
+			end if;
+		end if;
+	end process;
+
+	--FALTA DEPOIS FAZER ESTADO SEL_TAMANHO
+	comb_proc : process(PS, coca, agua, sumoLar, timeExp)
+	begin
+		case (PS) is
+		when TOla =>
+			sel_word <= msg_OLA;
+			timeVal <= TempoInicial;
+			if(timeExp = '1') then
+				NS <= TEPro;
+			else
+				NS <= TOla;
+			end if;
+			
+		when TEPro =>
+			sel_word <= msg_EPro;
+			--tempo infinito
+			timeVal <= (others => '-');
+			if(coca <= '1') then
+				NS <= TCoca;
+			elsif(agua <= '1') then 
+				NS <= TAgua;
+			elsif(sumoLar <= '1') then 
+				NS <= TSLAr;
+			else
+				NS <= TEPro;
+			end if;
+			
+		when TCoca =>
+			LEDR <= '1';
+			sel_word <= msg_COCA;
+			timeVal <= TempoPrep;
+			if(timeExp = '1') then
+				NS <= TDone;
+			else
+				NS <= TCoca;
+			end if;
+			
+				
+		when TAgua =>
+			LEDR <= '1';
+			sel_word <= msg_AGUA;
+			timeVal <= TempoPrep;
+			if(timeExp = '1') then
+				NS <= TDone;
+			else
+				NS <= TAgua;
+			end if;
+			
+			
+		when TSLAr =>
+			LEDR <= '1';
+			sel_word <= msg_SLAr;
+			timeVal <= TempoPrep;
+			if(timeExp = '1') then
+				NS <= TDone;
+			else
+				NS <= TSLAr;
+			end if;
+				
+				
+		when TDone =>
+			timeVal <= TempoDone;
+			LEDG <= '1';
+			if(timeExp = '1') then
+				NS <= TOla;
+			else
+				NS <= TDone;
+			end if;
+			
+			
+		end case;
+	end process;
+	
+end Behavior;

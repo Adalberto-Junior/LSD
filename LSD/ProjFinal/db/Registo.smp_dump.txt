@@ -1,0 +1,22 @@
+
+State Machine - |MaqVenda|Sel_Nblocos_gelo_FSM:deb_to_SelBlocos|PS
+Name PS.T4cubos PS.T3cubos PS.T1cubo PS.T2cubos PS.T0cubos PS.Desligado PS.Inicio 
+PS.Inicio 0 0 0 0 0 0 0 
+PS.Desligado 0 0 0 0 0 1 1 
+PS.T0cubos 0 0 0 0 1 0 1 
+PS.T2cubos 0 0 0 1 0 0 1 
+PS.T1cubo 0 0 1 0 0 0 1 
+PS.T3cubos 0 1 0 0 0 0 1 
+PS.T4cubos 1 0 0 0 0 0 1 
+
+State Machine - |MaqVenda|Escolha_Produto_FSM:reg_to_eref|PS
+Name PS.TDoneTSpes PS.TDoneTSoli PS.TDoneTFan PS.TSpes PS.TSoli PS.TFan PS.TEref PS.ThihiEspera PS.Thihi 
+PS.Thihi 0 0 0 0 0 0 0 0 0 
+PS.ThihiEspera 0 0 0 0 0 0 0 1 1 
+PS.TEref 0 0 0 0 0 0 1 0 1 
+PS.TFan 0 0 0 0 0 1 0 0 1 
+PS.TSoli 0 0 0 0 1 0 0 0 1 
+PS.TSpes 0 0 0 1 0 0 0 0 1 
+PS.TDoneTFan 0 0 1 0 0 0 0 0 1 
+PS.TDoneTSoli 0 1 0 0 0 0 0 0 1 
+PS.TDoneTSpes 1 0 0 0 0 0 0 0 1 

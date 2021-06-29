@@ -1,0 +1,63 @@
+|SeqDetector
+CLOCK_50 => clkdividern:ClkDivider.clkIn
+SW[0] => seqdetfsm:SeqDet.reset
+SW[1] => seqdetfsm:SeqDet.Xin
+LEDR[0] <= seqdetfsm:SeqDet.Yout
+LEDG[0] <= clkdividern:ClkDivider.clkOut
+LEDG[1] <= seqdetfsm:SeqDet.Zout[0]
+LEDG[2] <= seqdetfsm:SeqDet.Zout[1]
+LEDG[3] <= seqdetfsm:SeqDet.Zout[2]
+LEDG[4] <= seqdetfsm:SeqDet.Zout[3]
+
+
+|SeqDetector|ClkDividerN:ClkDivider
+clkIn => clkOut~reg0.CLK
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => s_divCounter[2].CLK
+clkIn => s_divCounter[3].CLK
+clkIn => s_divCounter[4].CLK
+clkIn => s_divCounter[5].CLK
+clkIn => s_divCounter[6].CLK
+clkIn => s_divCounter[7].CLK
+clkIn => s_divCounter[8].CLK
+clkIn => s_divCounter[9].CLK
+clkIn => s_divCounter[10].CLK
+clkIn => s_divCounter[11].CLK
+clkIn => s_divCounter[12].CLK
+clkIn => s_divCounter[13].CLK
+clkIn => s_divCounter[14].CLK
+clkIn => s_divCounter[15].CLK
+clkIn => s_divCounter[16].CLK
+clkIn => s_divCounter[17].CLK
+clkIn => s_divCounter[18].CLK
+clkIn => s_divCounter[19].CLK
+clkIn => s_divCounter[20].CLK
+clkIn => s_divCounter[21].CLK
+clkIn => s_divCounter[22].CLK
+clkIn => s_divCounter[23].CLK
+clkIn => s_divCounter[24].CLK
+clkIn => s_divCounter[25].CLK
+clkIn => s_divCounter[26].CLK
+clkIn => s_divCounter[27].CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SeqDetector|SeqDetFSM:SeqDet
+clk => pstaty~1.DATAIN
+reset => pstaty.OUTPUTSELECT
+reset => pstaty.OUTPUTSELECT
+reset => pstaty.OUTPUTSELECT
+reset => pstaty.OUTPUTSELECT
+Xin => Yout.DATAB
+Xin => nstaty.S1.IN0
+Xin => Selector0.IN1
+Xin => nstaty.S10.DATAB
+Xin => nstaty.S100.DATAB
+Zout[0] <= Zout[0].DB_MAX_OUTPUT_PORT_TYPE
+Zout[1] <= Zout[1].DB_MAX_OUTPUT_PORT_TYPE
+Zout[2] <= Zout[2].DB_MAX_OUTPUT_PORT_TYPE
+Zout[3] <= Zout[3].DB_MAX_OUTPUT_PORT_TYPE
+Yout <= Yout.DB_MAX_OUTPUT_PORT_TYPE
+
+

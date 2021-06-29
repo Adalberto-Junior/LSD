@@ -1,0 +1,12 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Disp_DecoHelo is
+					  port(enable  : in std_logic;
+							 Input   : in std_logic_vector(2 downto 0);
+							 OutHex0 : out std_logic_vector(6 downto 0);
+							 OutHex1 : out std_logic_vector(6 downto 0);
+							 OutHex2 : out std_logic_vector(6 downto 0);
+							 OutHex3 : out std_logic_vector(6 downto 0));
+end Disp_DecoHelo; 
+------------------------

@@ -1,0 +1,738 @@
+$comment
+	File created using the following command:
+		vcd file Contadorgray.msim.vcd -direction
+$end
+$date
+	Mon May 17 17:49:57 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module contadorgray_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " dataIn [2] $end
+$var wire 1 # dataIn [1] $end
+$var wire 1 $ dataIn [0] $end
+$var wire 1 % dataOut [2] $end
+$var wire 1 & dataOut [1] $end
+$var wire 1 ' dataOut [0] $end
+$var wire 1 ( reset $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var wire 1 , devoe $end
+$var wire 1 - devclrn $end
+$var wire 1 . devpor $end
+$var wire 1 / ww_devoe $end
+$var wire 1 0 ww_devclrn $end
+$var wire 1 1 ww_devpor $end
+$var wire 1 2 ww_clk $end
+$var wire 1 3 ww_reset $end
+$var wire 1 4 ww_dataIn [2] $end
+$var wire 1 5 ww_dataIn [1] $end
+$var wire 1 6 ww_dataIn [0] $end
+$var wire 1 7 ww_dataOut [2] $end
+$var wire 1 8 ww_dataOut [1] $end
+$var wire 1 9 ww_dataOut [0] $end
+$var wire 1 : \dataOut[0]~output_o\ $end
+$var wire 1 ; \dataOut[1]~output_o\ $end
+$var wire 1 < \dataOut[2]~output_o\ $end
+$var wire 1 = \clk~input_o\ $end
+$var wire 1 > \reset~input_o\ $end
+$var wire 1 ? \dataIn[0]~input_o\ $end
+$var wire 1 @ \dataIn[2]~input_o\ $end
+$var wire 1 A \dataIn[1]~input_o\ $end
+$var wire 1 B \pstaty~26_combout\ $end
+$var wire 1 C \pstaty~27_combout\ $end
+$var wire 1 D \pstaty.S010~q\ $end
+$var wire 1 E \pstaty~24_combout\ $end
+$var wire 1 F \pstaty~19_combout\ $end
+$var wire 1 G \pstaty~25_combout\ $end
+$var wire 1 H \pstaty.S011~q\ $end
+$var wire 1 I \pstaty~18_combout\ $end
+$var wire 1 J \pstaty~20_combout\ $end
+$var wire 1 K \pstaty~21_combout\ $end
+$var wire 1 L \pstaty.S100~q\ $end
+$var wire 1 M \pstaty~22_combout\ $end
+$var wire 1 N \pstaty~23_combout\ $end
+$var wire 1 O \pstaty.S101~q\ $end
+$var wire 1 P \pstaty~12_combout\ $end
+$var wire 1 Q \pstaty~13_combout\ $end
+$var wire 1 R \pstaty.S110~q\ $end
+$var wire 1 S \pstaty~14_combout\ $end
+$var wire 1 T \pstaty~15_combout\ $end
+$var wire 1 U \pstaty.S111~q\ $end
+$var wire 1 V \pstaty~16_combout\ $end
+$var wire 1 W \pstaty~17_combout\ $end
+$var wire 1 X \pstaty.S000~q\ $end
+$var wire 1 Y \pstaty~10_combout\ $end
+$var wire 1 Z \pstaty~11_combout\ $end
+$var wire 1 [ \pstaty.S001~q\ $end
+$var wire 1 \ \WideOr2~0_combout\ $end
+$var wire 1 ] \WideOr1~0_combout\ $end
+$var wire 1 ^ \WideOr0~0_combout\ $end
+$var wire 1 _ \ALT_INV_WideOr0~0_combout\ $end
+$var wire 1 ` \ALT_INV_WideOr1~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0(
+0)
+1*
+x+
+1,
+1-
+1.
+1/
+10
+11
+02
+03
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+1M
+0N
+0O
+0P
+0Q
+0R
+1S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+1\
+1]
+1^
+0_
+0`
+0"
+0#
+0$
+04
+05
+06
+07
+08
+19
+0%
+0&
+1'
+$end
+#10000
+1!
+12
+1=
+#20000
+0!
+02
+0=
+#30000
+1!
+12
+1=
+#40000
+0!
+02
+0=
+#50000
+1!
+12
+1=
+#60000
+0!
+02
+0=
+#70000
+1!
+1(
+12
+13
+1>
+1=
+1J
+1W
+1Z
+#80000
+0!
+02
+0=
+#90000
+1!
+12
+1=
+1X
+1[
+1B
+0]
+1`
+1;
+18
+1&
+#100000
+0!
+02
+0=
+#110000
+1!
+12
+1=
+#120000
+0!
+1$
+02
+16
+1?
+0=
+1C
+1Y
+0Z
+#130000
+1!
+12
+1=
+1D
+0[
+0\
+0^
+0B
+1_
+0:
+1<
+09
+17
+0'
+1%
+#140000
+0!
+02
+0=
+#150000
+1!
+12
+1=
+#160000
+0!
+02
+0=
+#170000
+1!
+12
+1=
+#180000
+0!
+0$
+1#
+02
+06
+15
+1A
+0?
+0=
+1B
+1E
+1G
+0C
+#190000
+1!
+12
+1=
+0D
+1H
+1I
+1^
+0B
+0G
+0_
+1G
+0<
+07
+0%
+#200000
+0!
+02
+0=
+#210000
+1!
+12
+1=
+#220000
+0!
+02
+0=
+#230000
+1!
+1$
+12
+16
+1?
+1=
+0E
+1F
+1K
+0G
+#240000
+0!
+02
+0=
+#250000
+1!
+12
+1=
+0H
+1L
+1]
+0I
+0`
+0;
+08
+0&
+#260000
+0!
+02
+0=
+#270000
+1!
+12
+1=
+#280000
+0!
+0$
+0#
+1"
+02
+06
+05
+14
+1@
+0A
+0?
+0=
+0F
+0J
+0M
+1N
+0K
+#290000
+1!
+12
+1=
+0L
+1O
+1P
+0^
+1_
+1<
+17
+1%
+#300000
+0!
+02
+0=
+#310000
+1!
+12
+1=
+#320000
+0!
+02
+0=
+#330000
+1!
+12
+1=
+#340000
+0!
+02
+0=
+#350000
+1!
+1$
+12
+16
+1?
+1=
+1J
+1M
+1Q
+0N
+#360000
+0!
+02
+0=
+#370000
+1!
+12
+1=
+0O
+1R
+1\
+0P
+0]
+1`
+1:
+1;
+19
+18
+1'
+1&
+#380000
+0!
+02
+0=
+#390000
+1!
+12
+1=
+#400000
+0!
+02
+0=
+#410000
+1!
+12
+1=
+#420000
+0!
+02
+0=
+#430000
+1!
+0$
+1#
+12
+06
+15
+1A
+0?
+1=
+1P
+0S
+1T
+0Q
+#440000
+0!
+02
+0=
+#450000
+1!
+12
+1=
+0R
+1U
+1]
+0P
+0`
+0;
+08
+0&
+#460000
+0!
+02
+0=
+#470000
+1!
+12
+1=
+#480000
+0!
+02
+0=
+#490000
+1!
+12
+1=
+#500000
+0!
+02
+0=
+#510000
+1!
+12
+1=
+#520000
+0!
+02
+0=
+#530000
+1!
+1$
+12
+16
+1?
+1=
+1S
+1V
+0W
+0T
+#540000
+0!
+02
+0=
+#550000
+1!
+12
+1=
+0U
+0X
+1^
+0_
+0<
+07
+0%
+#560000
+0!
+02
+0=
+#570000
+1!
+12
+1=
+#580000
+0!
+02
+0=
+#590000
+1!
+12
+1=
+#600000
+0!
+02
+0=
+#610000
+1!
+12
+1=
+#620000
+0!
+02
+0=
+#630000
+1!
+12
+1=
+#640000
+0!
+02
+0=
+#650000
+1!
+12
+1=
+#660000
+0!
+02
+0=
+#670000
+1!
+0$
+0#
+0"
+12
+06
+05
+04
+0@
+0A
+0?
+1=
+0V
+0Y
+1Z
+1W
+#680000
+0!
+02
+0=
+#690000
+1!
+0(
+12
+03
+0>
+1=
+1X
+1[
+0J
+0W
+0Z
+1B
+0]
+1`
+1;
+18
+1&
+#700000
+0!
+02
+0=
+#710000
+1!
+12
+1=
+0X
+0[
+0B
+1]
+0`
+0;
+08
+0&
+#720000
+0!
+02
+0=
+#730000
+1!
+12
+1=
+#740000
+0!
+02
+0=
+#750000
+1!
+12
+1=
+#760000
+0!
+02
+0=
+#770000
+1!
+12
+1=
+#780000
+0!
+02
+0=
+#790000
+1!
+12
+1=
+#800000
+0!
+02
+0=
+#810000
+1!
+12
+1=
+#820000
+0!
+02
+0=
+#830000
+1!
+12
+1=
+#840000
+0!
+02
+0=
+#850000
+1!
+12
+1=
+#860000
+0!
+02
+0=
+#870000
+1!
+12
+1=
+#880000
+0!
+1(
+02
+13
+1>
+0=
+1J
+1W
+1Z
+#890000
+1!
+12
+1=
+1X
+1[
+1B
+0]
+1`
+1;
+18
+1&
+#900000
+0!
+02
+0=
+#910000
+1!
+12
+1=
+#920000
+0!
+02
+0=
+#930000
+1!
+12
+1=
+#940000
+0!
+02
+0=
+#950000
+1!
+12
+1=
+#960000
+0!
+02
+0=
+#970000
+1!
+12
+1=
+#980000
+0!
+02
+0=
+#990000
+1!
+12
+1=
+#1000000

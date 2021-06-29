@@ -1,0 +1,43 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Maquina_AutoTop is
+						port(CLOCK_50	: in  std_logic;
+							  HEX0		: out std_logic_vector(6 downto 0);
+							  HEX1		: out std_logic_vector(6 downto 0);
+							  HEX2		: out std_logic_vector(6 downto 0);
+							  HEX3		: out std_logic_vector(6 downto 0);
+							  LEDG		: out std_logic_vector(0 downto 0);
+							  LEDR		: out std_logic_vector(0 downto 0));
+end Maquina_AutoTop;
+-------------------
+
+architecture Structural of Maquina_AutoTop is
+
+--Sinais---
+	signal s_clk1Hz					: std_logic;
+	signal s_newTime, s_timeExp	: std_logic;
+	signal s_timeVal					: std_logic_vector(7 downto 0);
+	
+	
+	
+begin
+
+
+clkDivider : entity work.ClkDividerN(RTL)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end Structural;

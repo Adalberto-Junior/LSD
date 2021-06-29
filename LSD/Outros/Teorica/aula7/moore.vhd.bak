@@ -1,0 +1,31 @@
+------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+------------
+
+entity moore is 
+			port(clk    : in std_logic;
+				  reset  : in std_logic;
+				  w      : in std_logic;
+				  z      : out std_logic);
+end moore;
+----------
+
+architecture beahavioral of moore is 
+		type State_type is (S0, S1, S2);
+		Signal S_y, S_y_next : State_type;
+begin
+
+		scron : process(clk)
+						begin
+							if(rising_edge(clk)) then
+								if(reset = '1') then
+									S_y  <= S0;
+									z	  <= '0';
+								else
+									S_y  <= S_y_next;
+								 end if;
+								end if;
+							end process;
+				
+		comb  : process(z)

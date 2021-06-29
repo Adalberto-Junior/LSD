@@ -1,0 +1,81 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Maquina_AutoTop is
+						port(CLOCK_50	: in  std_logic;
+							  SW		   : in std_logic_vector(3 downto 0);
+							  HEX0		: out std_logic_vector(6 downto 0);
+							  HEX1		: out std_logic_vector(6 downto 0);
+							  HEX2		: out std_logic_vector(6 downto 0);
+							  HEX3		: out std_logic_vector(6 downto 0);
+							  LEDG		: out std_logic_vector(0 downto 0);
+							  LEDR		: out std_logic_vector(0 downto 0));
+end Maquina_AutoTop;
+-------------------
+
+architecture Structural of Maquina_AutoTop is
+
+--Sinais---
+	signal s_clk1Hz					: std_logic;
+	signal s_newTime, s_timeExp	: std_logic;
+	Signal s_ativad					: std_logic;
+	--Signal s_dispEnable				: std_logic;
+	Signal s_timeEnable				: std_logic;
+	--Signal s_display0					: std_logic_vector(6 downto 0);
+	--Signal s_display1					: std_logic_vector(6 downto 0);
+	--Signal s_display2					: std_logic_vector(6 downto 0);
+	--Signal s_display3					: std_logic_vector(6 downto 0);
+	--Signal s_reset						: std_logic;
+	Signal s_selWord					: std_logic_vector(2 downto 0);
+	signal s_timeVal					: std_logic_vector(7 downto 0);
+	
+	
+	
+begin
+
+
+clkDivider : entity work.ClkDividerN(RTL)
+							generic map(divFactor => 50000000)
+								port map(clkIn			 => CLOCK_50,
+											clkOut		 => s_clk1Hz);
+											
+--Dis_DecoHelo: entity work.Disp_DecoHelo(Shell)
+								--port map(enable  => s_clk1Hz,
+										--	ativad  => s_ativad,
+										--	OutHex0 => s_display0,
+										--	OutHex1 => s_display1,
+										--	OutHex2 => s_display2,
+											--OutHex3 => s_display3);
+											
+Display_Decoded : entity work.Display_Decoded(Display)
+									port map(Enable => s_clk1Hz,
+												selWord    => s_selWord,
+												OutHex0    => HEX0,
+												OutHex1    => HEX1,
+												OutHex2    => HEX2,
+												OutHex3    => HEX3);
+												
+TimerFSM : entity work.TimerFSM(Behavioral)
+									port map(clk        => CLOCK_50,
+												reset      => SW(3),
+												newTime    => s_newTime,
+												timeEnable => s_timeEnable,
+												timeExp 	  => s_timeExp,
+												timeVal    => s_timeVal);
+												
+Escolha_pro : entity work.Escolha_prod_FSM(maquina)
+									port map(clk        => CLOCK_50,
+												SW(3)      => SW(3),
+												SW(2)      => SW(2),
+												SW(1)      => SW(1),
+												SW(0)      => SW(0),
+												timeExp    => s_timeExp,
+												newTime    => s_newTime,
+												timeVal    => s_timeVal,
+												timeEnable => s_timeEnable,
+											--	ativad     => s_ativad,
+												selWord    => s_selWord,
+												--dispEnable => s_dispEnable,
+												Led(0)	  => LEDR(0),
+												Led(1)     => LEDG(0));												
+end Structural;

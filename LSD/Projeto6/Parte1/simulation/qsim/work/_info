@@ -1,0 +1,280 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/LSD/Projeto6/Parte1/simulation/qsim
+Eshiftregister4
+Z1 w1620384589
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+Z10 dC:/LSD/Projeto6/Parte1/simulation/qsim
+Z11 8ShiftRegister_Demo.vho
+Z12 FShiftRegister_Demo.vho
+l0
+L36
+V_Sf4I^9`k6k]PN;AHb>@`3
+!s100 i:W`O`YUQcf=gBL>Sm3dk3
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1620384591
+!i10b 1
+Z15 !s108 1620384590.000000
+Z16 !s90 -work|work|ShiftRegister_Demo.vho|
+Z17 !s107 ShiftRegister_Demo.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 14 shiftregister4 0 22 _Sf4I^9`k6k]PN;AHb>@`3
+l65
+L44
+V;glB4GUhcMCBM6HKibenS3
+!s100 I4?AD>26<FFoHUNz>XKT23
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Eshiftregister4_vhd_vec_tst
+Z20 w1620384587
+R7
+R8
+R10
+Z21 8ShiftRegister4.vwf.vht
+Z22 FShiftRegister4.vwf.vht
+l0
+L31
+VhG2CZiT<AnBRafnd]iIRd2
+!s100 AbL2e[:DJOYLbKI=g<IG[2
+R13
+32
+R14
+!i10b 1
+Z23 !s108 1620384591.000000
+Z24 !s90 -work|work|ShiftRegister4.vwf.vht|
+Z25 !s107 ShiftRegister4.vwf.vht|
+!i113 1
+R18
+R19
+Ashiftregister4_arch
+R7
+R8
+Z26 DEx4 work 26 shiftregister4_vhd_vec_tst 0 22 hG2CZiT<AnBRafnd]iIRd2
+l46
+L33
+V`L3AF62j6LD=R28OUK;341
+!s100 m46>Z3zaTDmM1;C?KLX_b0
+R13
+32
+R14
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R18
+R19
+Eshiftregisterloadn
+Z27 w1619963520
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R0
+R11
+R12
+l0
+L36
+VDG1K?4h7Q6iF]9K:D0W0j0
+!s100 fJ?3KR[PA3f_T0UfkN;j_2
+R13
+32
+Z28 !s110 1619963521
+!i10b 1
+Z29 !s108 1619963521.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 18 shiftregisterloadn 0 22 DG1K?4h7Q6iF]9K:D0W0j0
+l96
+L48
+VCYM11>jj9D<@EVM=T=Q=U3
+!s100 LgXRP]Z?oP=n@<[4BcYTR2
+R13
+32
+R28
+!i10b 1
+R29
+R16
+R17
+!i113 1
+R18
+R19
+Eshiftregisterloadn_vhd_vec_tst
+Z30 w1619963519
+R7
+R8
+R0
+Z31 8ShiftRegisterLoadN.vwf.vht
+Z32 FShiftRegisterLoadN.vwf.vht
+l0
+L31
+V^eY249gdhTL`FOKC14?^72
+!s100 inmmUPQQcU^eo>Ggncz;Y1
+R13
+32
+R28
+!i10b 1
+R29
+Z33 !s90 -work|work|ShiftRegisterLoadN.vwf.vht|
+Z34 !s107 ShiftRegisterLoadN.vwf.vht|
+!i113 1
+R18
+R19
+Ashiftregisterloadn_arch
+R7
+R8
+DEx4 work 30 shiftregisterloadn_vhd_vec_tst 0 22 ^eY249gdhTL`FOKC14?^72
+l54
+L33
+VNRa0BC^al8^NQB:QJ;[=o1
+!s100 PR_Y2K7EgB:h2kP55jIo=0
+R13
+32
+R28
+!i10b 1
+R29
+R33
+R34
+!i113 1
+R18
+R19
+Eshiftregistern
+Z35 w1619694720
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R0
+R11
+R12
+l0
+L36
+VDXLGjMH9IgTNVZm2hal>`3
+!s100 ?90J?571U@ZUc1S6CQPQg0
+R13
+32
+Z36 !s110 1619694721
+!i10b 1
+Z37 !s108 1619694721.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 14 shiftregistern 0 22 DXLGjMH9IgTNVZm2hal>`3
+l66
+L44
+Vf8oERQOo<b=cgHA;Dh2?L3
+!s100 D?30PfHg_9_JFJIbob[@L1
+R13
+32
+R36
+!i10b 1
+R37
+R16
+R17
+!i113 1
+R18
+R19
+Eshiftregistern_vhd_vec_tst
+Z38 w1619694719
+R7
+R8
+R0
+Z39 8ShiftRegisterN.vwf.vht
+Z40 FShiftRegisterN.vwf.vht
+l0
+L31
+V5nUhSFB]FUY_M9k4L74Dz3
+!s100 VKW[WJYD_=@XVzV:NXieJ0
+R13
+32
+Z41 !s110 1619694722
+!i10b 1
+Z42 !s108 1619694722.000000
+Z43 !s90 -work|work|ShiftRegisterN.vwf.vht|
+Z44 !s107 ShiftRegisterN.vwf.vht|
+!i113 1
+R18
+R19
+Ashiftregistern_arch
+R7
+R8
+DEx4 work 26 shiftregistern_vhd_vec_tst 0 22 5nUhSFB]FUY_M9k4L74Dz3
+l46
+L33
+Vi_:m6AooKGfc4WXacfbha2
+!s100 `CW6Ff8zJP^ia@5AM9zHm1
+R13
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 1
+R18
+R19

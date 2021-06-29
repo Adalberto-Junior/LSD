@@ -1,0 +1,33 @@
+--------------
+library IEEE;
+use IEEE,STD_LOGIC_1164.all;
+
+--------------
+entity PEnc4_2 is
+					port(decodeIn   : in std_logic_vector(3 downto 0);
+							validOut   : out std_logic;
+							encodedOut : out std_logic_vector(1 downto 0));
+end PEnc4_2;	
+
+--------------
+architecture prioridade of PEnc4_2 is
+
+begin
+			process(validOut, decodeIn)
+			begin
+				
+				if(validOut = '0') then
+					encodedOut <= "00";
+				else
+					if(decodeIn = "1XXX") then 
+						encodedOut <= "11";
+						elsif(decodeIn = "01XX") then
+						encodedOut <= "10";
+						elsif(decodeIn = "001X") then
+						encodedOut <= "01";
+					else 
+						encodedOut <= "00";
+					end if;
+				end if;
+			end process;
+ end prioridade;

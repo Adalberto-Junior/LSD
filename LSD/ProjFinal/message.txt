@@ -1,0 +1,98 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity modoDeAcu is
+				port(clk      : in std_logic;
+					  reset    : in std_logic;
+					  selModAc : in std_logic;
+					  maisAc   : in std_logic;
+					  menosAc  : in std_logic;
+					  selBar   : out std_logic_vector(15 downto 0));
+end modoDeAcu;
+-------------
+
+architecture RTL of modoDeAcu is
+
+--Sinais e tipos para estados;
+	type estados is (Desligado, Inicio, Start, twoBar, threeBar, fourBar);
+	Signal s_currentState, s_nextState : estados := Start;
+
+begin 
+
+syc_proc  : process(clk)
+						begin
+							if(rising_edge(clk)) then
+								if(selModAc = '1')then
+									--s_currentState <= Desligado;
+								 --else
+									if(reset = '1') then
+									s_currentState <= Inicio;
+								else
+									s_currentState <= s_nextState;
+								end if;
+							end if;
+							end if;
+						end process;
+							
+
+comb_proc : process(s_currentState, maisAc, menosAc)
+					begin
+					  case(s_currentState) is
+							
+							when Desligado =>
+								selBar <= (others => '-');
+								s_nextState <= Desligado;
+								
+							when Inicio =>
+								selBar <= (others => '-');
+							  if(maisAc = '1') then
+								   s_nextState <= Start;
+								 else
+								   s_nextState <= Inicio;
+								end if;
+							
+							when Start =>
+								 selBar <= "0000000000000001";
+								if(maisAc = '1') then
+									s_nextState <= twoBar;
+								elsif(menosAc = '1') then
+									s_nextState <= Inicio;
+								else
+									s_nextState <= Start;
+								end if;
+							
+							when twoBar =>
+								 selBar <= "0000000000010000";
+								if(maisAc = '1') then
+									s_nextState <= threeBar;
+								elsif(menosAc = '1') then
+									s_nextState <= Start;
+								else
+									s_nextState <= twoBar;
+								end if;
+								
+							when threeBar =>
+									selBar <= "0000000100000000";
+								if(maisAc = '1') then
+									s_nextState <= fourBar;
+								elsif(menosAc = '1') then
+									s_nextState <= twoBar;
+								else
+									s_nextState <= threeBar;
+								end if;
+								
+							when fourBar =>
+									selBar <= "0001000000000000";
+								if(menosAc = '1') then
+									s_nextState <= threeBar;
+								else
+									s_nextState <= fourBar;
+								end if;
+								
+							when others =>
+								selBar <= (others => '-');
+								s_nextState <= Start;
+							end case;
+						end process;
+end RTL;
+-------

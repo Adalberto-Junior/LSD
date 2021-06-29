@@ -1,0 +1,11 @@
+
+State Machine - |contadorgrayDemo|contadorgray:inst|pstaty
+Name pstaty.S111 pstaty.S110 pstaty.S101 pstaty.S100 pstaty.S011 pstaty.S010 pstaty.S001 pstaty.S000 
+pstaty.S000 0 0 0 0 0 0 0 0 
+pstaty.S001 0 0 0 0 0 0 1 1 
+pstaty.S010 0 0 0 0 0 1 0 1 
+pstaty.S011 0 0 0 0 1 0 0 1 
+pstaty.S100 0 0 0 1 0 0 0 1 
+pstaty.S101 0 0 1 0 0 0 0 1 
+pstaty.S110 0 1 0 0 0 0 0 1 
+pstaty.S111 1 0 0 0 0 0 0 1 

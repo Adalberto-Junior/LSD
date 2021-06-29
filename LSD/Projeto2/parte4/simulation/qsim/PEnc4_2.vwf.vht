@@ -1,0 +1,108 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- *****************************************************************************
+-- This file contains a Vhdl test bench with test vectors .The test vectors     
+-- are exported from a vector file in the Quartus Waveform Editor and apply to  
+-- the top level entity of the current Quartus project .The user can use this   
+-- testbench to simulate his design using a third-party simulation tool .       
+-- *****************************************************************************
+-- Generated on "04/12/2021 18:32:21"
+                                                             
+-- Vhdl Test Bench(with test vectors) for design  :          PEnc4_2
+-- 
+-- Simulation tool : 3rd Party
+-- 
+
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;                                
+
+ENTITY PEnc4_2_vhd_vec_tst IS
+END PEnc4_2_vhd_vec_tst;
+ARCHITECTURE PEnc4_2_arch OF PEnc4_2_vhd_vec_tst IS
+-- constants                                                 
+-- signals                                                   
+SIGNAL decodeIn : STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL encodedOut : STD_LOGIC_VECTOR(1 DOWNTO 0);
+SIGNAL validOut : STD_LOGIC;
+COMPONENT PEnc4_2
+	PORT (
+	decodeIn : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	encodedOut : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+	validOut : OUT STD_LOGIC
+	);
+END COMPONENT;
+BEGIN
+	i1 : PEnc4_2
+	PORT MAP (
+-- list connections between master ports and signals
+	decodeIn => decodeIn,
+	encodedOut => encodedOut,
+	validOut => validOut
+	);
+-- decodeIn[3]
+t_prcs_decodeIn_3: PROCESS
+BEGIN
+	FOR i IN 1 TO 2
+	LOOP
+		decodeIn(3) <= '0';
+		WAIT FOR 240000 ps;
+		decodeIn(3) <= '1';
+		WAIT FOR 240000 ps;
+	END LOOP;
+	decodeIn(3) <= '0';
+WAIT;
+END PROCESS t_prcs_decodeIn_3;
+-- decodeIn[2]
+t_prcs_decodeIn_2: PROCESS
+BEGIN
+	FOR i IN 1 TO 4
+	LOOP
+		decodeIn(2) <= '0';
+		WAIT FOR 120000 ps;
+		decodeIn(2) <= '1';
+		WAIT FOR 120000 ps;
+	END LOOP;
+	decodeIn(2) <= '0';
+WAIT;
+END PROCESS t_prcs_decodeIn_2;
+-- decodeIn[1]
+t_prcs_decodeIn_1: PROCESS
+BEGIN
+	FOR i IN 1 TO 8
+	LOOP
+		decodeIn(1) <= '0';
+		WAIT FOR 60000 ps;
+		decodeIn(1) <= '1';
+		WAIT FOR 60000 ps;
+	END LOOP;
+	decodeIn(1) <= '0';
+WAIT;
+END PROCESS t_prcs_decodeIn_1;
+-- decodeIn[0]
+t_prcs_decodeIn_0: PROCESS
+BEGIN
+	FOR i IN 1 TO 16
+	LOOP
+		decodeIn(0) <= '0';
+		WAIT FOR 30000 ps;
+		decodeIn(0) <= '1';
+		WAIT FOR 30000 ps;
+	END LOOP;
+	decodeIn(0) <= '0';
+	WAIT FOR 30000 ps;
+	decodeIn(0) <= '1';
+WAIT;
+END PROCESS t_prcs_decodeIn_0;
+END PEnc4_2_arch;

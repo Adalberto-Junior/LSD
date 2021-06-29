@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jun 20 19:07:35 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Maquina_Auto_ofe_pro
+Top-level Entity Name : Maquina_Auto_ofe_proDemo
+Family : Cyclone IV E
+Total logic elements : 79
+    Total combinational functions : 78
+    Dedicated logic registers : 35
+Total registers : 35
+Total pins : 35
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

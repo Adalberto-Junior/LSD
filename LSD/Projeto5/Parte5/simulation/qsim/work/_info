@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/LSD/Projeto5/Parte5/simulation/qsim
+Ealun
+Z1 w1618753340
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8ALUN_Demo.vho
+Z9 FALUN_Demo.vho
+l0
+L34
+V:zkZkN]>T`;L:=?5:Ehdj1
+!s100 o8gk[aZ;XK06><]E]:>7B3
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1618753341
+!i10b 1
+Z12 !s108 1618753341.000000
+Z13 !s90 -work|work|ALUN_Demo.vho|
+Z14 !s107 ALUN_Demo.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 4 alun 0 22 :zkZkN]>T`;L:=?5:Ehdj1
+l414
+L44
+V]lhc]11:zmbiXLX[C3IMH3
+!s100 Ga=fj5deA`jlGmJR5LMEb3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealun_vhd_vec_tst
+Z17 w1618753338
+R5
+R6
+R0
+Z18 8ALUN.vwf.vht
+Z19 FALUN.vwf.vht
+l0
+L31
+VZmf>MXRC^=RJ<ifz^o]1`2
+!s100 ^c9dz91I9eQTXOB>V?a0N0
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|ALUN.vwf.vht|
+Z21 !s107 ALUN.vwf.vht|
+!i113 1
+R15
+R16
+Aalun_arch
+R5
+R6
+DEx4 work 16 alun_vhd_vec_tst 0 22 Zmf>MXRC^=RJ<ifz^o]1`2
+l50
+L33
+VA;>Ok3gXcQiWRQ[0l9ba`3
+!s100 F52@EKBJ9b<1Z:I;[YnXe2
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

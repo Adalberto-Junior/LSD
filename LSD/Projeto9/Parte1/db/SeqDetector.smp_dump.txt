@@ -1,0 +1,7 @@
+
+State Machine - |SeqDetector|SeqDetFSM:SeqDet|pstaty
+Name pstaty.S100 pstaty.S10 pstaty.S1 pstaty.S0 
+pstaty.S0 0 0 0 0 
+pstaty.S1 0 0 1 1 
+pstaty.S10 0 1 0 1 
+pstaty.S100 1 0 0 1 

@@ -1,0 +1,229 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/LSD/Projeto3/Parte3/simulation/qsim
+Ealudemo
+Z1 w1617047454
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8ALUDemo.vho
+Z9 FALUDemo.vho
+l0
+L34
+V:Z8BL6]WTY^bjZCS3;VF41
+!s100 E3N:SAi>Alb;RSZf]h0bY2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1617047455
+!i10b 1
+Z12 !s108 1617047455.000000
+Z13 !s90 -work|work|ALUDemo.vho|
+Z14 !s107 ALUDemo.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 aludemo 0 22 :Z8BL6]WTY^bjZCS3;VF41
+l221
+L43
+Vf3kA1D5`=8UMKOhE4=ffi2
+!s100 J^l_0XdQ^N:@X1fhgnO6@2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealudemo1
+Z17 w1617048270
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L77
+VG4d5WXfR6lE5Y;0Y@ANG81
+!s100 MAhcIV33B]n0N@4hG?aJ:1
+R10
+32
+Z18 !s110 1617048271
+!i10b 1
+Z19 !s108 1617048271.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 aludemo1 0 22 G4d5WXfR6lE5Y;0Y@ANG81
+l337
+L124
+V6VX9BP??el0JiHTNc7JcU2
+!s100 ^NPfK9`zb7o39f49<h:WR3
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Ealudemo1_vhd_vec_tst
+Z20 w1617048268
+R5
+R6
+R0
+Z21 8ALUDemo1.vwf.vht
+Z22 FALUDemo1.vwf.vht
+l0
+L31
+V`djbnFE:mm`QM8:109ShO0
+!s100 aLl6:?PB[ZO=9DJGR;@Q[0
+R10
+32
+Z23 !s110 1617048272
+!i10b 1
+R19
+Z24 !s90 -work|work|ALUDemo1.vwf.vht|
+Z25 !s107 ALUDemo1.vwf.vht|
+!i113 1
+R15
+R16
+Aaludemo1_arch
+R5
+R6
+Z26 DEx4 work 20 aludemo1_vhd_vec_tst 0 22 `djbnFE:mm`QM8:109ShO0
+l50
+L33
+VgddlJTH3PJMj`7_=7d_KJ0
+!s100 YkA@Vd43:P^CBQG;VK<082
+R10
+32
+R23
+!i10b 1
+R19
+R24
+R25
+!i113 1
+R15
+R16
+Ealudemo_vhd_vec_tst
+Z27 w1617047452
+R5
+R6
+R0
+Z28 8ALUDemo.vwf.vht
+Z29 FALUDemo.vwf.vht
+l0
+L31
+VM]=UW96o=9Rg8@:9kSSlJ3
+!s100 hGf2z3:=TBfZi;QVLd4>G2
+R10
+32
+R11
+!i10b 1
+R12
+Z30 !s90 -work|work|ALUDemo.vwf.vht|
+Z31 !s107 ALUDemo.vwf.vht|
+!i113 1
+R15
+R16
+Aaludemo_arch
+R5
+R6
+DEx4 work 19 aludemo_vhd_vec_tst 0 22 M]=UW96o=9Rg8@:9kSSlJ3
+l48
+L33
+V:?oX]N=VXYHX_O0IMo:<=3
+!s100 JOjF8e[n1W1S;LGfHL8En2
+R10
+32
+R11
+!i10b 1
+R12
+R30
+R31
+!i113 1
+R15
+R16
+Ehard_block
+R17
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16

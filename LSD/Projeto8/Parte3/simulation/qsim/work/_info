@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LSD/Projeto8/Parte3/simulation/qsim
+Edrinksfsm
+Z1 w1621186891
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z10 8DrinksMachineV2.vho
+Z11 FDrinksMachineV2.vho
+l0
+L36
+V`OzL2EFkjh>hb_0>dYnUj2
+!s100 hobWHL9^5F6K6<RzF91@g1
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1621186892
+!i10b 1
+Z14 !s108 1621186891.000000
+Z15 !s90 -work|work|DrinksMachineV2.vho|
+Z16 !s107 DrinksMachineV2.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 drinksfsm 0 22 `OzL2EFkjh>hb_0>dYnUj2
+l86
+L46
+V_IX[G9?@5k<Af5o6<g3@U1
+!s100 h4T?KJ`VL9X0HTR7Hl6Df1
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Edrinksfsm_vhd_vec_tst
+Z19 w1621186890
+R7
+R8
+R0
+Z20 8Maquinabebida.vwf.vht
+Z21 FMaquinabebida.vwf.vht
+l0
+L31
+Vaa`6FZHLBkeNnX>FWXgbX0
+!s100 a9ljge6l_U1fbZ=^7nNNm3
+R12
+32
+R13
+!i10b 1
+Z22 !s108 1621186892.000000
+Z23 !s90 -work|work|Maquinabebida.vwf.vht|
+Z24 !s107 Maquinabebida.vwf.vht|
+!i113 1
+R17
+R18
+Adrinksfsm_arch
+R7
+R8
+DEx4 work 21 drinksfsm_vhd_vec_tst 0 22 aa`6FZHLBkeNnX>FWXgbX0
+l50
+L33
+Vj?SfaH[?C6z5Km]jGh4ni0
+!s100 eHzcgafQVz8;ZD]i3^kP;1
+R12
+32
+R13
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R17
+R18

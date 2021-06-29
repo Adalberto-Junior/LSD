@@ -1,0 +1,316 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/LSD/Projeto1/parte2/simulation/qsim
+Eand2gate
+Z0 w1616708472
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z7 dC:/intelFPGA_lite/17.1/LSD/Projeto1/parte2/simulation/qsim
+Z8 8AND2Gate.vho
+Z9 FAND2Gate.vho
+l0
+L34
+VFZIja_aO15EZ0_8Gf;?270
+!s100 [?YNK@CebANk@=1UgRkYG1
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1616708473
+!i10b 1
+Z12 !s108 1616708473.000000
+Z13 !s90 -work|work|AND2Gate.vho|
+Z14 !s107 AND2Gate.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 and2gate 0 22 FZIja_aO15EZ0_8Gf;?270
+l60
+L42
+VX=58NzE^5TDhSJ9PDGgAK1
+!s100 k1aE4EWJMiMejFJ<M2Vml0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eand2gate_vhd_vec_tst
+Z17 w1616708471
+R4
+R5
+R7
+Z18 8AND2Gate.vwf.vht
+Z19 FAND2Gate.vwf.vht
+l0
+L31
+VH8mFDa`DcETlh4`Gol:C@1
+!s100 ^M0I9`aebNHgQD[URo]R11
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|AND2Gate.vwf.vht|
+Z21 !s107 AND2Gate.vwf.vht|
+!i113 1
+R15
+R16
+Aand2gate_arch
+R4
+R5
+DEx4 work 20 and2gate_vhd_vec_tst 0 22 H8mFDa`DcETlh4`Gol:C@1
+l46
+L33
+VV`On2?J?Q4Zzc_8TISOkU0
+!s100 S41F?Si7Df?MW0Z<lJ8_M0
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
+Ehard_block
+Z22 w1616707988
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+R10
+32
+Z23 !s110 1616707988
+!i10b 1
+Z24 !s108 1616707988.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R23
+!i10b 1
+R24
+R13
+R14
+!i113 1
+R15
+R16
+Enand2gate
+Z25 w1616708853
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L34
+VL;=TKgc3`U^S5R@HW<[NO1
+!s100 _2<3X_DQ@<b[cECC2>6P^0
+R10
+32
+Z26 !s110 1616708854
+!i10b 1
+Z27 !s108 1616708854.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 nand2gate 0 22 L;=TKgc3`U^S5R@HW<[NO1
+l61
+L42
+V6l_ePhiazlg2ilNTe6FD>1
+!s100 Mz[klCc5Ld>:0JAHF3MMg1
+R10
+32
+R26
+!i10b 1
+R27
+R13
+R14
+!i113 1
+R15
+R16
+Enand2gate_vhd_vec_tst
+Z28 w1616708851
+R4
+R5
+R7
+Z29 8NAND2Gate.vwf.vht
+Z30 FNAND2Gate.vwf.vht
+l0
+L31
+VC1E3gU=QY4imChhPMPooi0
+!s100 HF;KnnLFgh<lSJdjf20<F3
+R10
+32
+Z31 !s110 1616708855
+!i10b 1
+R27
+Z32 !s90 -work|work|NAND2Gate.vwf.vht|
+Z33 !s107 NAND2Gate.vwf.vht|
+!i113 1
+R15
+R16
+Anand2gate_arch
+R4
+R5
+DEx4 work 21 nand2gate_vhd_vec_tst 0 22 C1E3gU=QY4imChhPMPooi0
+l46
+L33
+VOIz0bMTifEE^i2J=HO3A92
+!s100 >YlI6;E]DcS^H[gk?]ocV1
+R10
+32
+R31
+!i10b 1
+R27
+R32
+R33
+!i113 1
+R15
+R16
+Enotgate
+R22
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L77
+VUhWOTP68DbPR>hWY9g]>P1
+!s100 [Bd8CIk4hYO?6go[nnWiW2
+R10
+32
+R23
+!i10b 1
+R24
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 7 notgate 0 22 UhWOTP68DbPR>hWY9g]>P1
+l112
+L89
+VWH0m=oSk<C`4Im82bHUNR1
+!s100 MUML@K7>cdQNNXo^nPIF;2
+R10
+32
+R23
+!i10b 1
+R24
+R13
+R14
+!i113 1
+R15
+R16
+Enotgate_vhd_vec_tst
+Z34 w1616707986
+R4
+R5
+R7
+Z35 8NOTGate.vwf.vht
+Z36 FNOTGate.vwf.vht
+l0
+L31
+V=ZQFU=K7G]BBKb[TFk4YL0
+!s100 AKN0QjJn[TY`b7Rn0F7:o0
+R10
+32
+R23
+!i10b 1
+R24
+Z37 !s90 -work|work|NOTGate.vwf.vht|
+Z38 !s107 NOTGate.vwf.vht|
+!i113 1
+R15
+R16
+Anotgate_arch
+R4
+R5
+DEx4 work 19 notgate_vhd_vec_tst 0 22 =ZQFU=K7G]BBKb[TFk4YL0
+l44
+L33
+V;Rh5S@d=G=]i=EU@NDJd50
+!s100 fSNAUSV]@YPZ58nY>JhU[3
+R10
+32
+R23
+!i10b 1
+R24
+R37
+R38
+!i113 1
+R15
+R16

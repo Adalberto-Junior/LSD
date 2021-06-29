@@ -1,0 +1,51 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity MaqVenda is
+	port(CLOCK_50	: in  std_logic;
+		  SW			: in  std_logic_vector(4 downto 0);
+		  LEDR		: out std_logic;
+		  LEDG		: out std_logic
+		  );
+end MaqVenda;
+
+architecture Behav of MaqVenda is
+
+	signal s_clk1Hz					: std_logic;
+	--CRIAR PROXIMOS SIGNALS
+
+begin
+	clk_div_1hz : entity work.ClkDividerN(RTL)
+		generic map(divFactor => 50000000)
+		port map(clkIn			 => CLOCK_50,
+					clkOut		 => s_clk1Hz);
+					
+	register_ini : entity work.RegisterRef(Shell)
+		port map(clk		=>	s_clk1Hz,
+					reset		=> SW(3),
+					coca		=> SW(0),
+					agua		=> SW(1),
+					sumLar	=>	SW(2));
+
+	main_fsm : entity work.Escolha_Produto_FSM(Behavior)
+		port map(reset			=> not KEY(0),
+					clk			=> s_clk1Hz,
+					coca			=> SW(0),
+					agua			=> s_newTime,
+					sumoLar		=> 	,
+					timeExp		=> s_timeExp,
+					newTime  	=>    ,
+					timeVal  	=> s_timeVal,
+					timerEnable =>  	,
+					sel_word		=> 	,
+					LEDR			=> LEDR(0),
+					LEDG			=> LEDG(0));	
+	
+	timer_fsm : entity work.TimerAuxFSM(Behavioral)
+		port map(reset		=> not KEY(0),
+					clk		=> not s_clk1Hz,
+					newTime	=> s_newTime,
+					timeVal	=> s_timeVal,
+					timeExp	=> s_timeExp);
+
+end Behav;

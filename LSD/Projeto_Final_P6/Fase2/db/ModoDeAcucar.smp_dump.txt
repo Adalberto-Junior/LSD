@@ -1,0 +1,21 @@
+
+State Machine - |ModoDeAcucarDemo|modoDeAcu:inst6|s_currentState
+Name s_currentState.fourBar s_currentState.threeBar s_currentState.twoBar s_currentState.oneBar s_currentState.zeroBar s_currentState.Inicio 
+s_currentState.Inicio 0 0 0 0 0 0 
+s_currentState.zeroBar 0 0 0 0 1 1 
+s_currentState.oneBar 0 0 0 1 0 1 
+s_currentState.twoBar 0 0 1 0 0 1 
+s_currentState.threeBar 0 1 0 0 0 1 
+s_currentState.fourBar 1 0 0 0 0 1 
+
+State Machine - |ModoDeAcucarDemo|Escolha_prod_FSM:inst2|s_currentState
+Name s_currentState.Ready_Choc s_currentState.Ready_Cha s_currentState.Ready_Cafe s_currentState.Tchoc s_currentState.Tcha s_currentState.Tcafe s_currentState.choose s_currentState.Helo s_currentState.Start 
+s_currentState.Start 0 0 0 0 0 0 0 0 0 
+s_currentState.Helo 0 0 0 0 0 0 0 1 1 
+s_currentState.choose 0 0 0 0 0 0 1 0 1 
+s_currentState.Tcafe 0 0 0 0 0 1 0 0 1 
+s_currentState.Tcha 0 0 0 0 1 0 0 0 1 
+s_currentState.Tchoc 0 0 0 1 0 0 0 0 1 
+s_currentState.Ready_Cafe 0 0 1 0 0 0 0 0 1 
+s_currentState.Ready_Cha 0 1 0 0 0 0 0 0 1 
+s_currentState.Ready_Choc 1 0 0 0 0 0 0 0 1 

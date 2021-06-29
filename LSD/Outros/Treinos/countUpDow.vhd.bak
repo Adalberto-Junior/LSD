@@ -1,0 +1,34 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+------------
+
+entity of countUpDow is
+						port(clk  : std_logic;
+							  reset : std_logic;
+							  upDow : std_logic;
+							  count : std_logic_vector(3 downto 0));
+end countUpDow;
+--------------
+
+architecture Helt of countUpDow is
+
+	Signal s_ count : unsigned(3 downto 0);
+begin
+			process(clk)
+				begin
+					if(rising_edge(clk)) then
+						if(reset = '1') then
+							s_count <= (others => '0');
+						else
+							if(upDow = '1') then
+								s_count <= s_count + 1;
+							else
+							   s_count <= s_count - 1;
+								
+							end if;
+						end if;
+					end if;
+				end process;
+end Helt;
+--------
